@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
+}
+
+$mobile: 500px;
+$tablet: 800px;
+$desktop: 801px;
+
+.center-items {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.glass-bg {
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.4);
+  filter: drop-shadow(1px 3px 1px #e4e7e7);
+}
+
+.glass {
+  min-width: 40%;
+  max-width: 70%;
+  border-radius: 25px;
+  box-shadow: 0 0 15px 4px rgb(29 17 86 / 15%), 2px 0 15px 4px rgb(29 17 86 / 15%);
+  text-align: center;
+  @extend .glass-bg;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(39, 39, 38);
+}
+
+section {
+  min-height: 100vh;
+  position: relative;
+
+  h4 {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 10px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.menu-bar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  padding: 20px;
+  justify-content: space-evenly;
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.4);
+    opacity: .8;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 8px 25px;
+
+    &:hover {
+      background: #ffffffb8;
+      filter: drop-shadow(2px 4px 6px #fff);
+      color: #000;
+      transition: 500ms;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .glass {
+    min-height: 50%;
+    padding: 25px;
+  }
+  .center-items {
+    grid-gap: 10px;
+  }
+
+  .menu-bar {
+    right: 10px;
+    height: 400px;
+    flex-direction: column;
+    align-items: flex-end;
+
+    a {
+      width: 120px !important;
+    }
+  }
+
+  section {
+    h4 {
+      font-size: 70px;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 45px;
+      line-height: 50px;
+      margin: 10px 0;
+
+      &.lit {
+        font-size: 30px !important;
+        line-height: 35px !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .menu-bar {
+    top: 5px;
+    width: 80%;
+
+    a {
+      width: 80px;
+    }
+  }
+
+  section {
+    &:nth-child(1) {
+      padding: 7% 15px !important;
+    }
+
+    .glass {
+      padding: 15px 20px;
+    }
+
+    h4 {
+      font-size: 30px;
+      margin: 5px 0;
+    }
+    p {
+      font-size: 20px;
+      line-height: 35px;
+      margin: 5px;
+
+      &.lit {
+        font-size: 15px !important;
+        line-height: 20px !important;
+      }
+    }
+  }
+}

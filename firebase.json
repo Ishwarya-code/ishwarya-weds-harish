@@ -1,0 +1,19 @@
+{
+  "hosting": {
+	"site": "sriram-weds-uma",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "*.scss",
+      "*.css.map"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

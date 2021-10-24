@@ -1,0 +1,29 @@
+{
+  "name": "wedding-templates",
+  "version": "1.0.0",
+  "description": "Wedding ceremony",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "node node_modules/.bin/http-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaasav-kumar/wedding-templates.git"
+  },
+  "keywords": [
+    "wedding",
+    "ceremony",
+    "reception",
+    "events",
+    "games"
+  ],
+  "author": "vaasav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaasav-kumar/wedding-templates/issues"
+  },
+  "homepage": "https://github.com/vaasav-kumar/wedding-templates#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
