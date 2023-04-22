@@ -37,21 +37,21 @@ section {
 @media screen and (min-width: $desktop) {
   section {
     &:nth-child(1) {
-      background: url('../imgs/d3.jpg') fixed;
+      background: url('../imgs/d1.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
     }
 
     &:nth-child(2) {
-      background: url('../imgs/d2.jpg') fixed;
+      background: url('../imgs/m1.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
     }
   
     &:nth-child(3) {
-      background: url('../imgs/d1.jpg') fixed;
+      background: url('../imgs/d2.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
@@ -74,7 +74,7 @@ section {
 @media screen and (max-width: $tablet) {
   section {
     &:nth-child(1) {
-      background: linear-gradient(#343535 1%, transparent 13%), url('../imgs/img1.jpg') fixed;
+      background: linear-gradient(#343535 1%, transparent 13%), url('../imgs/d1.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center 10%;
@@ -95,14 +95,14 @@ section {
     }
 
     &:nth-child(2) {
-      background: url('../imgs/d3.jpg') fixed;
+      background: url('../imgs/d2.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: right center;
     }
 
     &:nth-child(3) {
-      background: url('../imgs/m1.jpg') fixed;
+      background: url('../imgs/d3.jpg') fixed;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;

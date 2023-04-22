@@ -1,19 +1,11 @@
 {
   "hosting": {
-	"site": "sriram-weds-uma",
     "public": "public",
+    "site": "harish-weds-ishwarya",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**",
-      "*.scss",
-      "*.css.map"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
+      "**/node_modules/**"
     ]
   }
 }

@@ -16,13 +16,13 @@ const animate = () => {
 
 const trackAnalytics = () => {
   const firebaseConfig = {
-  apiKey: "AIzaSyCfodLxsyp8g0YmxM-zSyRBknwv9MMyHVk",
-  authDomain: "sriram-uma-6ea92.firebaseapp.com",
-  projectId: "sriram-uma-6ea92",
-  storageBucket: "sriram-uma-6ea92.appspot.com",
-  messagingSenderId: "1069044697867",
-  appId: "1:1069044697867:web:a98334d2b4a0789817300e",
-  measurementId: "G-PF4D8PECJG"
+    apiKey: "AIzaSyAPTboB9sPZi0IxNgMxLZ7LPEKD_qpZXYQ",
+    authDomain: "ishwarya-weds-harish.firebaseapp.com",
+    projectId: "ishwarya-weds-harish",
+    storageBucket: "ishwarya-weds-harish.appspot.com",
+    messagingSenderId: "371869057066",
+    appId: "1:371869057066:web:090cc837058bf133a94353",
+    measurementId: "G-VE3FYEWR9Z"
 }
   firebase.initializeApp(firebaseConfig)
   const $analytics = firebase.analytics()
